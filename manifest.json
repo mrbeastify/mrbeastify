@@ -1,0 +1,27 @@
+{
+
+	"manifest_version": 2,
+	"name": "MrBeastify",
+	"version": "1.0",
+
+	"description": "Adds MrBeast to all YouTube thumbnails.",
+
+	"icons": {
+		"48": "icons/beast-48.png",
+		"96": "icons/beast-96.png"
+	},
+
+	"content_scripts": [
+		{
+			"matches": ["*://*.youtube.com/*"],
+			"js": ["mrbeastify.js"]
+		}
+	],
+
+	"browser_specific_settings": {
+		"gecko": {
+			"id": "mrbeastify@derkrassehacker.de"
+		}
+	}
+}
+
